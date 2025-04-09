@@ -1,0 +1,146 @@
+body {
+  font-family: 'microsoft yahei';
+  color: #333;
+  background-color: #eaf1f8;
+  font-size: 16px;
+  padding: 8px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.panel_cont {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.result_cont {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  flex-direction: column;
+  overflow: scroll;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+
+.user_list_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_list_item .header {
+  justify-content: flex-end;
+}
+
+.user_list_item .text_response {
+  max-height: 200px;
+}
+
+.header {
+  display: flex;
+  margin: 10px 2px 4px;
+}
+
+.text_response {
+  display: flex;
+  min-height: 0;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  overflow: scroll;
+  flex-direction: column;
+  max-height: 600px;
+  overflow: scroll;
+  font-size: 14px;
+}
+
+.input_area {
+  position: relative;
+  background-color: #fff;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 12px 12px 10px;
+  overflow: hidden;
+}
+
+.perf {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: #345634;
+}
+
+.input_area .textarea {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  resize: none;
+}
+
+.input_area .send_img {
+  width: 32px;
+  height: 32px;
+  float: right;
+  opacity: 0.4;
+}
+
+.blink {
+  font-size: 26px;
+  color: burlywood;
+  animation: 1s ease-in-out 1s infinite reverse both running blink;
+}
+
+@keyframes blink {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+
+[hidden] {
+  display: none;
+}
